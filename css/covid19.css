@@ -1,0 +1,692 @@
+#covid-19 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('../images/covid-19/bg.jpg') repeat;
+    font-family: Microsoft JhengHei, "微軟正黑體";
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+#covid-19 .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3% 2.5% 0 2.5%;
+}
+
+#covid-19 header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+
+/*     margin-bottom: 3%;
+    padding: 0% 2.5% 0 2.5%; */
+}
+
+#covid-19 header span {
+    display: block;
+    letter-spacing: 3px;
+    font-size: 40px;
+    padding: 10px 0;
+    line-height: 48px;
+    font-weight: bold;
+}
+
+.head_left {
+    width: 49%;
+}
+
+.head_right {
+    width: 49%;
+    display: inline-block;
+}
+
+.head_left p {
+    height: 3px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #a32424;
+}
+
+.left_word {
+    font-size: 17px;
+    line-height: 35px;
+    margin: 3% 0;
+}
+.head_right img{
+    width: 100%;
+}
+
+/*凱旋最新公告*/
+.worknews,
+.travelnews,
+.solution {
+    background-color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    margin-bottom: 5%;
+}
+
+.solution {
+    margin-bottom: 0%;
+}
+
+.news_title {
+    position: relative;
+    top: -19.5px;
+}
+
+.worknews_content,
+.travelnews_content,
+.solution_content {
+    padding: 0 5%;
+    position: relative;
+}
+
+.worknews_content .foreword {
+    font-weight: bold;
+    color: #c42f42;
+}
+
+.worknews_content p {
+    color: #000;
+    margin: 2% 0;
+}
+
+.content_detail {
+    margin-bottom: 2%;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2%;
+    position: relative;
+}
+
+.content_detail .con_short {
+    display: block;
+    width: 85%;
+}
+
+.no-line {
+    border-style: none;
+    padding-bottom: 0;
+    margin-bottom: 0%;
+}
+
+.content_detail .detail_title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #0068b7;
+}
+
+/*.content_detail span{
+    letter-spacing: 0px;
+}*/
+.worknews_bottom {
+    font-size: 25px;
+    color: #8c001a;
+    margin: 1% 0% 0%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.airplane {
+    position: absolute;
+    bottom: -8%;
+    right: 0%;
+    margin-left: 80%;
+}
+
+/*最新消息*/
+.travelnews_title,
+.solution_title {
+    position: relative;
+    top: -37.5px;
+}
+
+.travelnews_content .content_detail .detail_title {
+    font-size: 25px;
+    border-left: 4px solid #0068b7;
+    padding-left: 1%;
+    margin: -4% 0 1%;
+}
+
+.travelnews_content .detail_part span {
+    /*color:#ff0000;*/
+    /*font-size: 15px;*/
+}
+
+.travelnews_content .content_detail {
+    border-style: none;
+}
+
+.travelnews_content .content_detail .detail_part {
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px dashed #bfbfbf;
+    /*font-size: 15px;*/
+}
+
+.travelnews_content .content_detail .no-line {
+    border-style: none;
+}
+
+/*配套措施*/
+.solution_content .content_detail .detail_part span {
+    font-size: 18px;
+}
+
+.solution_content .content_detail .detail_part {
+    /*  line-height: 40px;*/
+    margin: 1% 0% 0% 2%;
+    border-bottom: 1px dashed #bfbfbf;
+    padding-bottom: 3.5%;
+}
+
+.solution_content .content_detail .detail_part.width {
+    width: 77%;
+}
+
+.solution_content .content_detail .no-line {
+    border-style: none;
+}
+
+.solution_content .content_detail {
+    border-style: none;
+}
+
+.solution_content {
+    position: relative;
+}
+
+.solution_content .solution_pic {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    margin-left: 75%;
+}
+
+.solution_content .solution_pic-2 {
+    position: absolute;
+    right: 0%;
+    bottom: -30%;
+    margin-left: 55%;
+}
+
+.solution_title p {
+    display: none;
+}
+
+
+/*乘機常見問題*/
+.often_question .question_content .question_title p {
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 1%;
+    line-height: 80px;
+
+}
+
+.often_question .question_content .question_title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.often_question .question_content .question_part p,
+.before::before {
+    font-size: 23px;
+    font-weight: bold;
+    /*line-height: 50px;*/
+    /*letter-spacing: 0;*/
+}
+
+.often_question .question_content .question_part p {
+    padding-bottom: 1%;
+}
+
+.often_question .question_content .question_part .before::before {
+    content: "A :";
+}
+
+.often_question .question_content .question_part {
+    margin-bottom: 6%;
+}
+
+.often_question .question_content {
+    width: 76%;
+}
+
+.often_question {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.washhand {
+    position: relative;
+    left: -5.6%;
+    width: 24%;
+    padding: 6% 0;
+}
+
+.washhand img {
+    max-width: 100%;
+    display: block;
+}
+
+/*病毒相關規定*/
+.solution_content .rules .rules__content .title span {
+    background-color: #2363a9;
+    border-radius: 5px;
+    color: #fff;
+    padding: 2px 5px;
+    display: block;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+.rules .rules__content .rules_part {
+    /*font-size: 16px;*/
+    /*  letter-spacing: 1px;
+    line-height: 40px;*/
+    text-align: justify;
+    margin-top: 3%;
+
+}
+
+.rules .rules__content .question {
+    width: 28%;
+    margin: 0 2.5%;
+}
+
+.rules .rules__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4%;
+    margin: 2% 0;
+}
+
+.rules .mobile,
+.rules_title p {
+    display: none;
+}
+
+/*取消相關條例*/
+.cancel_title img {
+    max-height: 100%;
+    display: block;
+}
+
+.cancel_content,
+.cancel_content_sec {
+    background: url('../images/covid-19/bg.jpg') repeat;
+    max-width: 100%;
+    margin: 0 4.5%;
+    position: relative;
+    padding: 5% 0 2%;
+}
+
+.cancel .circle {
+    position: absolute;
+    text-align: center;
+    top: -110px;
+    left: calc((100% - 160px)/2);
+}
+
+.cancel .cancel_part {
+    width: 88%;
+    margin: 0% auto;
+}
+
+.cancel_part span {
+    font-weight: bold;
+}
+
+.cancel p {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: normal;
+}
+
+.cancel h4 {
+    margin-top: 2%;
+}
+
+.cancel_content .cancel_part .table {
+    text-align: center;
+    margin: 2%;
+}
+
+.cancel_content .cancel_part .table img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cancel_content_sec {
+    margin: 12% 5% 3%;
+}
+
+.cancel .mobile,
+.cancel .cancel_title p {
+    display: none;
+}
+
+/*凱旋關心您*/
+.end {
+    padding: 0 14%;
+    font-weight: bold;
+    position: relative;
+}
+
+.end span {
+    font-size: 20px;
+    line-height: 40px;
+    color: #585858;
+}
+
+.end p {
+    font-size: 40px;
+    color: #8c001a;
+    text-align: center;
+    line-height: 100px;
+}
+
+.end img {
+    display: block;
+    max-width: 100%;
+}
+
+.end .heart {
+    position: absolute;
+    right: -1%;
+    top: 5%;
+}
+
+
+/*政府網址*/
+#covid-19 footer {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 30px;
+    padding: 2% 14%;
+    align-items: stretch;
+}
+
+footer .middle {
+    height: 50px;
+    width: 2px;
+    background-color: #000;
+    margin: 5px 8px 0 16px;
+}
+
+footer .right a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer .right a:hover {
+    background-color: #2363a9;
+    color: #fff;
+    transition: .3s;
+}
+
+.redword {
+    color: red;
+}
+
+.no-bottom {
+    margin-bottom: 0;
+    padding-bottom: 0%;
+}
+
+
+@media (max-width:1025px) {
+    .head_right {
+        width: 52%;
+        margin: auto 0;
+    }
+
+    .airplane {
+        width: 16%;
+    }
+
+    .content_detail .con_short {
+        width: 100%;
+    }
+
+    .solution_content .solution_pic-2 {
+        bottom: -24%;
+    }
+
+    .often_question .question_content .question_part p {
+        line-height: 35px;
+    }
+
+    .cancel .desk {
+        display: none;
+    }
+
+    .cancel .cancel_title p {
+        display: block;
+    }
+
+    .cancel_content,
+    .cancel_content_sec {
+        margin-top: 15%;
+    }
+
+    .end img {
+        top: 15%;
+        display: block;
+        max-width: 100%;
+    }
+
+    .end .heart {
+        width: 23%;
+        top: 25%;
+        right: 0;
+    }
+
+    .solution .solution_title p,
+    .rules_title p,
+    .cancel_title p {
+        font-size: 31px;
+        color: #fff;
+        background-color: #e60012;
+        font-weight: bold;
+        line-height: 50px;
+    }
+
+    .cancel_title p,
+    .rules_title p {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width:904px) {
+    .solution_content .solution_pic {
+        margin-left: 80%;
+    }
+
+    .solution_content .solution_pic-2 {
+        bottom: -10%;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .head_left,
+    .solution_content .content_detail .detail_part.width,
+    .often_question .question_content {
+        width: 100%;
+    }
+
+    .head_right,
+    .airplane,
+    .solution_content .solution_pic,
+    .washhand,
+    .rules .desk,
+    .cancel .mobile,
+    .end img {
+        display: none;
+    }
+
+    #covid-19 header {
+        margin-bottom: 6%;
+        text-align: center;
+    }
+
+    .head_left p {
+        margin: 0 auto;
+    }
+
+    .worknews,
+    .travelnews {
+        margin-bottom: 7%;
+    }
+
+    .solution_content .solution_pic-2 {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        margin: 2% 0 2%;
+    }
+
+    .solution_content .solution_pic-2 img {
+        margin: 0 auto;
+    }
+
+    .rules .rules_title p {
+        display: block;
+    }
+
+    .rules_title p span {
+        color: #000;
+    }
+
+    .cancel_content,
+    .cancel_content_sec {
+        padding-top: 8%;
+        margin-top: 20%;
+    }
+}
+
+@media (max-width:500px) {
+    .head_left .left_word {
+        text-align: justify;
+    }
+
+    .worknews,
+    .travelnews {
+        margin-bottom: 12%;
+    }
+
+    .worknews_bottom {
+        padding: 0 10% 2%;
+    }
+
+    .solution_title img,
+    .rules .mobile {
+        display: none;
+    }
+
+    .solution .solution_title p,
+    .rules_title p,
+    .cancel_title p {
+        text-align: center;
+        display: block;
+        padding: 0 24px;
+    }
+
+    .rules .rules__content .question {
+        width: 100%;
+        margin: 4% 0;
+    }
+
+    .solution_content .rules .rules__content .question .title {
+        text-align: center;
+        margin: 5% 0;
+    }
+
+    .cancel_content,
+    .cancel_content_sec {
+        margin-top: 30%;
+        padding-top: 13%;
+    }
+
+    .end,
+    #covid-19 footer {
+        padding: 0 5%;
+    }
+
+    footer .middle {
+        display: none;
+    }
+
+    footer .left {
+        border-bottom: 2px solid #000;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:425px) and (min-width: 320px) {
+    #covid-19 header span {
+        padding: 10px;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .content_detail {
+        margin-bottom: 4%;
+        padding-bottom: 4%;
+    }
+
+    .worknews,
+    .travelnews {
+        margin-bottom: 16%;
+    }
+
+    .solution .solution_title p,
+    .rules_title p,
+    .cancel_title p {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .cancel_content,
+    .cancel_content_sec {
+        margin-top: 40%;
+        padding-top: 20%;
+    }
+
+    .end p {
+        font-size: 25px;
+    }
+
+    .often_question .question_content .question_part p {
+        padding-bottom: 4%;
+    }
+
+    .often_question .question_content .question_title p {
+        font-size: 35px;
+        line-height: 55px;
+    }
+
+    .often_question .question_content .question_title {
+        display: block;
+        text-align: center;
+    }
+    .often_question .question_content .question_title img{
+        margin: 0 auto;
+    }
+}

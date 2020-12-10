@@ -1,0 +1,312 @@
+#taiwanTribe {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+    background: url('../images/taiwanTribe/BG.jpg') repeat center;
+}
+
+img {
+    max-width: 100%;
+}
+
+#taiwanTribe header {
+    position: relative;
+}
+
+#taiwanTribe header .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#taiwanTribe nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#taiwanTribe nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#taiwanTribe nav ul li {
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    margin: 1% .5% 0;
+}
+
+#taiwanTribe nav ul li:hover {
+    cursor: pointer;
+    transform: rotateY(360deg);
+}
+
+#taiwanTribe nav a {
+    text-decoration: none;
+}
+
+#taiwanTribe nav h2 {
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+
+
+/*部落介紹&行程*/
+#taiwanTribe main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3% 2%;
+}
+
+#Nantou,
+#Chiayi,
+#Kaohsiung,
+#Yilan,
+#Hualien {
+    color: #4e3621;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    margin-bottom: 5%;
+}
+
+.map {
+    text-align: center;
+    width: 30%;
+    height: 100%;
+}
+
+.container,
+.tribe,
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 67%;
+    align-items: flex-start;
+    padding: 0 2%;
+}
+
+.tribe {
+    width: 40%;
+    align-content: flex-start;
+}
+
+.intro ul {
+    margin: 5% 2%;
+    padding: 0;
+    width: 27px;
+    height: 55px;
+}
+
+.intro ul li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #4e3621;
+    transform: rotate(45deg);
+    margin: 1px;
+    padding: 0;
+}
+
+.trip {
+    width: 49%;
+}
+
+.trip_title::after {
+    content: "More...";
+    width: 65px;
+    height: 25px;
+    border-radius: 25px;
+    border: 1px solid #4e3621;
+    font-size: 12px;
+    padding: .3% 1%;
+}
+
+.trip_title {
+    margin-bottom: 5%;
+}
+
+/*文字設定*/
+.tribe h2 {
+    margin: 3% 0 2.5%;
+}
+
+.tribe span {
+    font-size: 1.5rem;
+}
+
+.tribe h4 {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.trip h3,
+.trip .trip_title p {
+    font-size: 1.25rem;
+}
+
+.trip h3 {
+    margin: 1% 0;
+    background-color: #4e3621;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.trip .trip_title p {
+    margin: 2.5% 0 2%;
+}
+
+.trip .trip_title span {
+    display: block;
+    margin-bottom: 2%;
+}
+
+.trip .trip_title p a {
+    text-decoration: none;
+    color: #4e3621;
+}
+
+.trip_title:hover::after {
+    background-color: #a04b1f;
+    border: 1px solid #a04b1f;
+    color: white;
+}
+
+.trip_title:hover p a {
+    color: #a04b1f;
+}
+
+#Hualien .container .tribe_list:nth-child(2) {
+    margin-top: 4%;
+}
+
+#goTop .top_pc {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 100px;
+    cursor: pointer;
+    z-index: 9;
+}
+
+#goTop .top_mo {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+
+    #Nantou,
+    #Chiayi,
+    #Kaohsiung,
+    #Yilan {
+        flex-wrap: nowrap;
+    }
+
+    .container,
+    .tribe,
+    .trip {
+        width: 100%;
+    }
+
+    .intro ul {
+        margin: 4% auto;
+        text-align: center;
+        width: 51px;
+        height: 17px;
+    }
+
+    .map {
+        width: 80%;
+    }
+
+    #Chiayi .intro h4 {
+        top: 0px;
+    }
+
+    #Hualien .map {
+        width: 43%;
+    }
+
+    #Hualien .container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px) {}
+
+@media (max-width:500px) {
+    #taiwanTribe main {
+        padding: 5%;
+    }
+
+    #Nantou,
+    #Chiayi,
+    #Kaohsiung,
+    #Yilan,
+    #Hualien {
+        display: block;
+    }
+
+    .map,
+    #Hualien .map,
+    #Hualien .container {
+        width: 100%;
+    }
+
+    .container {
+        margin: 5% 0 15%;
+    }
+
+    .intro ul {
+        margin: 5% auto;
+    }
+
+    .trip_title::after {
+        padding: 1% 4%;
+    }
+
+    .trip .trip_title span {
+        margin: 4% 0;
+    }
+
+    #Hualien .container .tribe_list:nth-child(2) {
+        margin-top: 10%;
+    }
+
+    #goTop .top_pc {
+        display: none;
+    }
+
+    #goTop .top_mo {
+        display: block;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 999;
+        right: 10px;
+        bottom: 10px;
+        left: initial;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,439 @@
+#taiwanHotSpring {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #f4d346;
+    font-family: 微軟正黑體;
+}
+
+#taiwanHotSpring .warpper {
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* 北中南按鍵 */
+/* #taiwanHotSpring header {
+    text-align: center;
+} */
+#taiwanHotSpring header .banner_mo{
+    display: none;
+}
+
+
+#taiwanHotSpring nav {
+    background-color: #979c4b;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#taiwanHotSpring nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#taiwanHotSpring nav ul li {
+    display: block;
+    margin: 0px;
+    padding: 0 30px;
+    position: relative;
+}
+
+#taiwanHotSpring nav ul .btn_c {
+    border-left: 2px dashed #000;
+    border-right: 2px dashed #000;
+    padding: 0 30px;
+}
+
+#taiwanHotSpring nav ul li .btn_2 {
+    display: none;
+}
+
+#taiwanHotSpring nav ul li:hover::before {
+    content: "";
+    height: 41px;
+    width: 45px;
+    display: block;
+    background: url('../images/taiwanHotSpring/hs_logo.png') no-repeat;
+    margin-right: 5px;
+    background-size: contain;
+}
+
+#taiwanHotSpring nav ul li:hover {
+    display: flex;
+    align-items: center;
+}
+
+#taiwanHotSpring nav ul li:hover .btn_2 {
+    display: block;
+}
+
+#taiwanHotSpring nav ul li:hover .btn {
+    display: none;
+}
+
+/* 溫泉介紹輪播 */
+#taiwanHotSpring main {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding-bottom: 10%;
+}
+
+.hotsrpings {
+    margin: 0 10%;
+}
+
+.hs_list {
+    display: inline-flex;
+    margin: 5% 0 15%;
+    align-items: flex-end;
+}
+
+.hs_list img {
+    display: block;
+}
+
+.hs_list .pic {
+    margin-top: 60px;
+    width: 60%;
+    height: auto;
+}
+
+.hs {
+    width: 40%;
+}
+
+.hs .moutain{
+    width: 70%;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    left: 0;
+}
+
+.hs .hs_word {
+    background-color: #faebac;
+    padding: 5%;
+    height: 290px;
+}
+
+.hs .hs_word .hs_name {
+    width: 45%;
+}
+
+.hs .hs_word h4 {
+    font-size: 0.875rem;
+    color: #000;
+    line-height: 24px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.hs .hs_word h4::before{
+    content:"";
+    display: inline-block;
+    width: 90px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: -5px;
+}
+
+.owl-theme {
+    position: relative;
+}
+
+.owl-theme .owl-dots {
+    position: absolute;
+    left: 28%;
+    bottom:18%;
+}
+
+.owl-theme .owl-dots button{
+    background-color: transparent;
+    border: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #fa8600;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #ffff00;
+}
+
+
+/* 行程內容 */
+#THS_north,
+#THS_central,
+#THS_south {
+    margin: 5% auto 12%;
+}
+
+#THS_central .title img,
+#THS_south .title img{
+    margin: 0 auto 2%;
+}
+
+#THS_north .title{
+    margin-left: calc((100% - 303px)/2);
+    margin-bottom: 2%;
+    display: inline-block;
+    position: relative;
+}
+
+#THS_north .title::before {
+    content: "";
+    width: 139px;
+    height: 157px;
+    background: url('../images/taiwanHotSpring/decora.png') no-repeat;
+    display: inline-block;
+    background-size: contain;
+    position: absolute;
+    bottom: 0px;
+    left: -60%;
+}
+
+#THS_north .title::after {
+    content: "";
+    width: 287px;
+    height: 99px;
+    background: url('../images/taiwanHotSpring/decora_2.png') no-repeat;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    right: -100%;
+}
+
+.trip_item {
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding: 2% 0;
+    position: relative;
+}
+
+.trip_item h3 {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.trip_item h3:hover {
+    padding-left: 15px;
+
+}
+
+.trip_item h3 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.trip_item .price {
+    font-size: 2rem;
+    color: #bd2203;
+    font-weight: bold;
+}
+
+.trip_item .price::before {
+    content: "$";
+    font-size: 2rem;
+    color: #bd2203;
+    font-weight: bold;
+}
+
+.trip_item .price::after {
+    content: "起";
+    font-size: 1rem;
+    color: #bd2203;
+    font-weight: bold;
+}
+
+#goTop .top_pc{
+    position: fixed;
+    right:40px;
+    bottom: 40px;
+    width: 100px;
+    cursor: pointer;
+    z-index: 9;
+}
+#goTop .top_mo{
+    display: none;
+}
+
+@media screen and (max-width:1490px) {
+    .trip_item .price {
+        position: absolute;
+        left: calc(100% - 140px);
+        bottom: 0px;
+}
+
+@media screen and (max-width:1030px) {
+    .hs .hs_word h4 {
+        line-height: 26px;
+        margin: 30px 0;
+    }
+
+    .hs_list {
+        flex-direction: column-reverse;
+        padding-top: 10%;
+    }
+
+    .hs_list .pic,
+    .hs_list .hs {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .hs_list .hs .hs_word img {
+        width: 40%;
+    }
+
+    .hs_list .hs .moutain {
+        display: none;
+    }
+
+    .hs .hs_word {
+        height: 200px;
+        padding: 2%;
+    }
+
+    .hs .hs_word h4::before {
+        width: 162px;
+        top: -20px;
+        left: calc((100% - 162px)/2);
+    }
+
+    .owl-theme .owl-dots {
+        left: calc((100% - 72px)/2);
+        bottom: 8%;
+    }
+
+    #THS_north .title::before,#THS_north .title::after {
+        display: none;
+    }
+
+    .trip_item h3 {
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .hs .hs_word .hs_name {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hs_list .hs .hs_word img {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .owl-theme .owl-dots {
+         bottom: 6%;
+    }
+
+    .hs_list .hs .hs_word img {
+        width: 60%;
+    }
+
+    .trip_item{
+        height: 260px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    #taiwanHotSpring header .banner_pc{
+    display: none;
+    }
+
+    #taiwanHotSpring header .banner_mo{
+    display: block;
+    }
+
+    #taiwanHotSpring nav ul li {
+        padding: 0 15px;
+    }
+
+    #taiwanHotSpring nav ul .btn_c {
+        padding: 0 15px;
+    }
+    
+    .hs_list .hs .hs_word img {
+        width: 100%;
+    }
+
+    .hs .hs_word {
+        height: 290px;
+    }
+
+    .owl-theme .owl-dots {
+        bottom:0%;
+    }
+
+    #THS_north {
+        margin-top: 20%;
+    }
+
+    #goTop .top_pc{
+        display: none;
+    }
+    #goTop .top_mo{
+        display: block;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 999;
+        right: 10px;
+        bottom: 10px;
+        left: initial;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #taiwanHotSpring nav {
+        height: 200px;
+    }
+
+    #taiwanHotSpring nav ul {
+        display: block;
+    }
+
+    #taiwanHotSpring nav ul li {
+        margin: 19px 0;
+    }
+
+    #taiwanHotSpring nav ul .btn_c {
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    #THS_north .title,
+    #THS_central .title,
+    #THS_south .title {
+        margin: 0 auto;
+    }
+
+    .hs .hs_word {
+        height: 340px;
+    }
+}

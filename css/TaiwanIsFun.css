@@ -1,0 +1,259 @@
+#taiwanIsFun {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體, Arial;
+    background: #ffc2cd url('../images/taiwanIsFun/web1_bg.jpg') no-repeat center top scroll;
+}
+
+#wrapper {
+    margin: 0px auto;
+    max-width: 1400px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+#taiwanIsFun nav {
+    margin-top: 3.5%;
+}
+
+#taiwanIsFun nav h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 62px;
+}
+
+#taiwanIsFun nav h3:hover {
+    cursor: pointer;
+    color: #feff00;
+}
+
+#taiwanIsFun nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+#taiwanIsFun nav ul li {
+    background: url('../images/taiwanIsFun/btn.png') no-repeat center;
+    background-size: contain;
+    width: 109px;
+    height: 141px;
+    text-align: center;
+    list-style: none;
+    margin: 0 3.5%;
+    flex-wrap: wrap;
+    transition: all 0.2s ease-in-out;
+}
+
+#taiwanIsFun nav li:hover {
+    position: relative;
+    top: 5px;
+}
+
+#taiwanIsFun main {
+    margin: 7% 0% 10%;
+}
+
+#north,
+#central,
+#south,
+#east,
+#island {
+    margin: 10% 0;
+}
+
+#taiwanIsFun .title {
+    position: absolute;
+    top: -65px;
+    left: calc((100% - 225px)/2);
+    z-index: 1;
+}
+
+#taiwanIsFun .title h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 6px;
+    padding-left: 4px;
+    position: absolute;
+    margin: 0px;
+    left: calc((100% - 122px)/2);
+    top: 36px;
+}
+
+.part_bg {
+    background-color: #f28794;
+    position: relative;
+}
+
+.part_bg::after {
+    content: "";
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    border: 2px dashed #fff799;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.allproduct {
+    padding: 3% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content {
+    width: 48%;
+    height: 200px;
+    border-bottom: 1.5px dotted #b74553;
+    margin-bottom: 2%;
+    padding: 1% 0;
+    position: relative;
+}
+
+.content h3 a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    transition: all 0.2s ease-in-out;
+}
+
+.content h3 a:hover {
+    cursor: pointer;
+    background-color: #00c3ff;
+}
+
+.content .detail p {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #ba1e30;
+    margin-top: 1.5%;
+    line-height: 20px;
+}
+
+.content .price {
+    font-family: arial;
+    font-size: 55px;
+    color: #ffff00;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.content .price:before {
+    content: "$";
+    font-size: 2rem;
+}
+
+.content .price:after {
+    content: "起";
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+#goTop .top_pc{
+    position: fixed;
+    right:40px;
+    bottom: 40px;
+    width: 100px;
+    cursor: pointer;
+    z-index: 9;
+}
+#goTop .top_mo{
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+    #north,
+    #central,
+    #south,
+    #east,
+    #island {
+        margin: 15% 0;
+    }
+
+    #taiwanIsFun nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .content {
+        width: 100%;
+        padding-top: 2%;
+    }
+}
+
+@media (max-width:500px) {
+
+    #north,
+    #central,
+    #south,
+    #east,
+    #island {
+        margin: 25% 0;
+    }
+
+    #taiwanIsFun nav ul li {
+        width: 90px;
+    }
+
+    #taiwanIsFun nav h3 {
+        font-size: 2.2rem;
+        padding-top: 64px;
+    }
+
+    #taiwanIsFun .title h3 {
+        top: 37px;
+    }
+
+    .allproduct {
+        padding-top: 7%;
+    }
+
+    #goTop .top_pc{
+        display: none;
+    }
+    #goTop .top_mo{
+        display: block;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 999;
+        right: 10px;
+        bottom: 10px;
+        left: initial;
+        cursor: pointer;
+    }
+
+    @media (max-width:425px) {
+
+        #north,
+        #central,
+        #south,
+        #east,
+        #island {
+            margin: 30% 0;
+        }
+
+        .content {
+            padding-top: 4%;
+            height: 220px;
+        }
+    }
