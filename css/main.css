@@ -171,8 +171,8 @@ header #point .st8 {
 
 .st10 {
     fill: #FFFFFF;
-    stroke: #231815;
-    stroke-miterlimit: 10;
+    /* stroke: #231815; */
+    /* stroke-miterlimit: 10; */
 }
 
 .st11 {
@@ -216,9 +216,9 @@ header #point .st8 {
 
 .st16 {
     fill: none;
-    stroke: #FFE100;
-    stroke-width: 10.5;
-    stroke-miterlimit: 10;
+    /* stroke: #FFE100; */
+    /* stroke-width: 10.5;
+    stroke-miterlimit: 10; */
 }
 
 nav {
