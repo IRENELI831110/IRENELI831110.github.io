@@ -666,32 +666,6 @@
             $(this).addClass('active').siblings('.active').removeClass('active');
         });
 
-        // // 浮動廣告
-        // var $win = $(window),
-        //     // 讓廣告區塊變透明且顯示出來
-        //     $ad = $('#goTop').css('opacity', 0).show(),
-        //     _width = $ad.width(),
-        //     _height = $ad.height(),
-        //     _diffY = 300,
-        //     _diffX = 20, //距離右及下方邊距
-        //     _moveSpeed = 800; // 移動的速度
-
-        // // 移動到定點
-        // $ad.css({
-        //     top: $(document).height(),
-        //     right: $win.width() - _width - _diffX,
-        //     opacity: 1
-        // });
-
-        // $win.bind('scroll resize', function() {
-        //     var $this = $(this);
-
-        //     // 控制移動
-        //     $ad.stop().animate({
-        //         top: $this.scrollTop() + $this.height() - _height - _diffY,
-        //         right: $this.scrollLeft() + $this.width() - _width - _diffX
-        //     }, _moveSpeed);
-        // }).scroll();
 
         // 網頁go top
         $('#tab01,#tab03,#tab04').find('#goTop').click(function() {
