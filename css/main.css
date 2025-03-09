@@ -206,6 +206,9 @@ main {
 }
 
 .detail_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   text-align: center;
   border-bottom: 2px solid #49c5ff;
 }
@@ -214,10 +217,13 @@ main {
   font-size: 1.75rem;
   color: #f39700;
   letter-spacing: 2px;
+  padding-bottom: 1.5rem;
 }
 
 .detail_info ul {
-  margin: 3.15% 0;
+  /* margin: 3.15% 0; */
+  padding-bottom: 1.5rem;
+  width: 100%;
 }
 
 .detail_info ul,
@@ -797,6 +803,10 @@ footer p {
     flex-wrap: wrap;
   }
 
+  .detail_info h3 {
+    padding-bottom: 0.75rem;
+  }
+
   .intro_list ul {
     margin-bottom: 40px;
   }
@@ -883,9 +893,9 @@ footer p {
     top: -93px;
   }
 
-  .detail_info li {
+  /* .detail_info li {
     margin: 2%;
-  }
+  } */
 
   .content_detail .detail_info li,
   .content_detail .schools li {
